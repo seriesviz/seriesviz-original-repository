@@ -22,18 +22,6 @@ h1
     color: yellow;
 }
 
-a /* Liens par défaut (non survolés) */
-{
-   text-decoration: none;
-   color: red;
-   font-style: italic;
-}
-
-a:hover /* Apparence au survol des liens */
-{
-   text-decoration: underline;
-   color: purple;
-}
 
 p:hover{
     color: red;
