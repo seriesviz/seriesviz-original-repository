@@ -5,10 +5,8 @@ p
     font-style: normal;
     text-align: justify;
     font-weight: bold;
-    text-decoration: line-through;
     float: left;
-    color: orange;
-    box-shadow: 6px 6px 0px green inset;
+    color: green;
 }
 h1
 {
@@ -16,11 +14,6 @@ h1
     color: blue;
 }
 
-.introduction
-{
-    float: left;
-    color: yellow;
-}
 
 
 p:hover{
