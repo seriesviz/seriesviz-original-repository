@@ -45,9 +45,9 @@ d3.json("top.json", function(graphe){
 	});
 
 	links.forEach(function(link) {
-		link.target = nodes[link.target] || (nodes[link.target] = {name: link.target, group: 2});
+		link.target = nodes[link.target] || (nodes[link.target] = {name: link.target, group: 10});
 	});
-	
+
 	var force = d3.layout.force()
 	.nodes(d3.values(nodes))
 	.links(links)
