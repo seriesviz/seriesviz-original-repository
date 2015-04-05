@@ -95,7 +95,7 @@ d3.json("top.json", function(graphe){
 	.call(force.drag);
 
 	node.append("circle")
-	.attr("r", 7)
+	.attr("r", 6)
 
 	node.append("svg:text")
 	.attr("class", "nodetext")
@@ -117,9 +117,9 @@ d3.json("top.json", function(graphe){
 	d3.select(this).select("circle").transition()
 	.duration(750)
 	.attr("r", 16);
-	// d3.select(this).select("text").transition()
-	// .duration(750)
-	// .attr("x", 13)
+	d3.select(this).select("text").transition()
+	.duration(750)
+	.attr("x", 13)
 	.style("stroke-width", ".5px")
 	.style("font", "17.5px serif")
 	.style("opacity", 1);
@@ -128,7 +128,7 @@ d3.json("top.json", function(graphe){
 	function mouseout() {
 	d3.select(this).select("circle").transition()
 	.duration(750)
-	.attr("r", 7);
+	.attr("r", 8);
 	}
 });
 </script>
