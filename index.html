@@ -30,7 +30,7 @@ pointer-events: none;
 var width = 550,
 	height = 400;
 
-var color = d3.scale.category20();
+var color = d3.scale.category10();
 
 
 d3.json("top.json", function(graphe){
@@ -45,7 +45,7 @@ d3.json("top.json", function(graphe){
 	});
 
 	links.forEach(function(link) {
-		link.target = nodes[link.target] || (nodes[link.target] = {name: link.target, group: 12});
+		link.target = nodes[link.target] || (nodes[link.target] = {name: link.target, group: 2});
 	});
 
 	var force = d3.layout.force()
