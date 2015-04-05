@@ -42,9 +42,12 @@ d3.json("top.json", function(graphe){
 
 	links.forEach(function(link) {
 		link.source = nodes[link.source] || (nodes[link.source] = {name: link.source, group: 1});
-		link.target = nodes[link.target] || (nodes[link.target] = {name: link.target, group: 2});
 	});
 
+	links.forEach(function(link) {
+		link.target = nodes[link.target] || (nodes[link.target] = {name: link.target, group: 2});
+	});
+	
 	var force = d3.layout.force()
 	.nodes(d3.values(nodes))
 	.links(links)
