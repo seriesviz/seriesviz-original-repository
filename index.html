@@ -59,8 +59,8 @@ d3.json("top_15.json", function(graphe){
 	.nodes(d3.values(nodes))
 	.links(links)
 	.size([width, height])
-	.linkDistance(50)
-	.charge(-320) // original -120
+	.linkDistance(65) // original 50
+	.charge(-250) // original -120
 	.on("tick", tick)
 	.start();
 
