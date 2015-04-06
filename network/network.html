@@ -16,7 +16,7 @@ opacity: 0.9;
 display: none;
 }
 */text {
-font: 7px sans-serif;
+font: 8px sans-serif;
 opacity: 1;
 pointer-events: none;
 }
@@ -119,9 +119,9 @@ d3.json("../top_15.json", function(graphe){
 	d3.select(this).select("circle").transition()
 	.duration(750)
 	.attr("r", 14);
-	// d3.select(this).select("text").transition()
-	// .duration(750)
-	// .attr("x", 13)
+	d3.select(this).select("text").transition()
+	.duration(750)
+	.attr("x", 13)
 	// .style("stroke-width", ".5px")
 	// .style("font", "17.5px serif")
 	// .style("opacity", 1);
