@@ -1,4 +1,18 @@
-p
+@import url(//fonts.googleapis.com/css?family=Raleway);
+
+body, nav a
+{
+
+    font-family: 'Raleway', Arial, sans-serif;
+    color: #143218;
+}
+.network
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*p
 {
     font-size: 14px; /* Paragraphes de 14 pixels */
     font-family: 'Source Sans Pro',sans-serif;
@@ -8,14 +22,29 @@ p
     float: left;
     color: green;
 }
-h1
-{
-    font-size: 40px; /* Titres de 40 pixels */
-    color: blue;
+*/
+@font-face {
+    font-family: 'bebas_neueregular';
+    src: url('BebasNeue-webfont.eot');
+    src: url('BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('BebasNeue-webfont.woff2') format('woff2'),
+         url('BebasNeue-webfont.woff') format('woff'),
+         url('BebasNeue-webfont.ttf') format('truetype'),
+         url('BebasNeue-webfont.svg#bebas_neueregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
+@font-face {
+    font-family: 'Raleway';
+    src: url('Raleway-ExtraLight-webfont.eot');
+    src: url('Raleway-ExtraLight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Raleway-ExtraLight-webfont.woff2') format('woff2'),
+         url('Raleway-ExtraLight-webfont.woff') format('woff'),
+         url('Raleway-ExtraLight-webfont.ttf') format('truetype'),
+         url('Raleway-ExtraLight-webfont.svg#Raleway') format('svg');
+    font-weight: normal;
+    font-style: normal;
 
-
-p:hover{
-    color: red;
 }
