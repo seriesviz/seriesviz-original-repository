@@ -25,15 +25,15 @@ iframe {
 }*/
 /*p
 {
-    font-size: 14px; /* Paragraphes de 14 pixels */
+    font-size: 14px;
     font-family: 'Source Sans Pro',sans-serif;
     font-style: normal;
     text-align: justify;
     font-weight: bold;
     float: left;
     color: green;
-}
-*/
+}*/
+
 @font-face {
     font-family: 'bebas_neueregular';
     src: url('BebasNeue-webfont.eot');
