@@ -1,11 +1,15 @@
 @import url(//fonts.googleapis.com/css?family=Raleway);
 
-body, nav a
-{
 
-    font-family: 'Raleway', Arial, sans-serif;
-    color: #143218;
+body {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  margin: 1em auto 4em auto;
+  position: relative;
+  tab-size: 2;
+  width: 960px;
+  color: #143218;
 }
+
 /*.network
 {
     display: flex;
