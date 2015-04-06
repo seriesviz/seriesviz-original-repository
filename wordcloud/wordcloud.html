@@ -6,7 +6,7 @@
 <script>
   var fontSize = d3.scale.log().range([10, 100]);
 
-  var layout = cloud()
+  var layout = d3.layout.cloud()
         .size([960, 600])
         .timeInterval(10)
         .text(function(d) { return d.key; })
