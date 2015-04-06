@@ -6,12 +6,12 @@ body, nav a
     font-family: 'Raleway', Arial, sans-serif;
     color: #143218;
 }
-.network
+/*.network
 {
     display: flex;
     align-items: center;
     justify-content: center;
-}
+}*/
 /*p
 {
     font-size: 14px; /* Paragraphes de 14 pixels */
