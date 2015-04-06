@@ -19,6 +19,7 @@ iframe {
 }
 p {
     width: 1100px;
+    text-align: justify;
 }
 /*.network
 {
