@@ -125,7 +125,7 @@ d3.json("../top_15.json", function(graphe){
 	.style("stroke-width", ".5px")
 	.style("font", "13.5px sans-serif");
 	svg.selectAll("g").sort(function (a, b) { // select the parent and sort the path's
-		if (a.id != d.id) return -1; // a is not the hovered element, send "a" to the back 
+		if (a != d) return -1; // a is not the hovered element, send "a" to the back 
 		else return 1; // a is the hovered element, bring "a" to the front 
 		});
 	}
