@@ -73,9 +73,7 @@ pointer-events: none;
 		.attr("height", height)
 		.attr("pointer-events", "all")
 		.call(d3.behavior.zoom().on("zoom", redraw))
-		.style("margin-left", "auto")
-		.style("margin-right", "auto")
-		.style("display", "block");
+		.attr("align", "center");
 
 		var vis = svg
 		.append("svg:g");
