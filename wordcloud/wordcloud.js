@@ -57,7 +57,7 @@ var stopWords = /^(i|me|my|myself|we|us|our|ours|ourselves|you|your|yours|yourse
     htmlTags = /(<[^>]*?>|<script.*?<\/script>|<style.*?<\/style>|<head.*?><\/head>)/g,
     matchTwitter = /^https?:\/\/([^\.]*\.)?twitter\.com/;
 
-hashchange("//www.jasondavies.com/wordtree/cat-in-the-hat.txt");
+//hashchange("//www.jasondavies.com/wordtree/cat-in-the-hat.txt");
 
 function parseHTML(d) {
   parseText(d.replace(htmlTags, " ").replace(/&#(x?)([\dA-Fa-f]{1,4});/g, function(d, hex, m) {
