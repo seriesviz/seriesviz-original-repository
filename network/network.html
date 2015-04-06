@@ -121,16 +121,20 @@ d3.json("../top_15.json", function(graphe){
 	.attr("r", 14);
 	d3.select(this).select("text").transition()
 	.duration(750)
-	.attr("x", 12)
-	// .style("stroke-width", ".5px")
+	.attr("x", 10)
+	.style("stroke-width", ".5px")
 	.style("font", "13.5px sans-serif");
-	// .style("opacity", 1);
 	}
 
 	function mouseout() {
 	d3.select(this).select("circle").transition()
 	.duration(750)
 	.attr("r", 6);
+	d3.select(this).select("text").transition()
+	.duration(750)
+	// .attr("x", 10)
+	// .style("stroke-width", ".5px")
+	.style("font", "8px sans-serif");
 	}
 });
 </script>
