@@ -4,6 +4,8 @@ html {
   min-width: 1100px;
 }
 body {
+  background-image: url('http://vignette2.wikia.nocookie.net/simpsons/images/c/c5/Homer_simpsonwoohooo.gif');
+  background-size: cover;
   font-family: "Helvetica Neue", Helvetica, sans-serif;
   margin: 0 auto;
   position: relative;
