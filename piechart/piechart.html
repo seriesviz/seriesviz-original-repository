@@ -183,7 +183,32 @@ var data0 = svg.select(".slices").selectAll("path.slice")
 if (data0.length == 0) data0 = data;
 var was = mergeWithFirstEqualZero(data, data0);
 var is = mergeWithFirstEqualZero(data0, data);
+    
+    /* ------- MOUSEOVER VALUES -------*/    
 
+    var arcs = svg.selectAll("g.slice")
+        .data(pie(is), key)
+        .enter()
+        .append("g")
+        .attr("class", "arc")
+        
+    arcs.append("path")
+        .attr("d", arc)
+        .style("opacity",0)
+        .style("fill", function(d, i) { return color(d.data.label); })
+        
+        .on("mouseover", function(d) {
+        centerText.text( d3.select(this).datum().data.value );
+        })
+    
+        .on("mouseout", function(d) {
+        centerText.text( "" );
+        });
+    
+    var centerText = svg.append("text")
+        .attr("dy", ".35em")
+        .style("text-anchor", "middle");  
+    
 /* ------- SLICE ARCS -------*/
 
 var slice = svg.select(".slices").selectAll("path.slice")
@@ -309,32 +334,8 @@ polyline = svg.select(".lines").selectAll("polyline")
  
 polyline
 .exit().transition().delay(duration)
-.remove();
-    
-/* ------- MOUSEOVER VALUES -------*/    
-    var text
-    var arcs = svg.selectAll("g.slice")
-        .data(pie(is))
-        .enter()
-        .append("g")
-        .attr("class", "arc")
-        
-    arcs.append("path")
-        .attr("d", arc)
-        .style("fill", function(d, i) { return color(d.data.label); })
-        
-        .on("mouseover", function(d) {
-        centerText.text( d3.select(this).datum().data.value );
-        })
-        .on("mouseout", function(d) {
-        centerText.text( "" );
-        });
-    
-    var centerText = svg.append("text")
-        .attr("dy", ".35em")
-        .style("text-anchor", "middle")   
+.remove(); 
 };
-
     
 
 </script>
